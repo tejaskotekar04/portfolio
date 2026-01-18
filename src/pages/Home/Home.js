@@ -2,6 +2,27 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Home.css';
 
 function Home() {
+    const education = [
+        {
+            degree: 'B.E. in Computer Engineering',
+            institution: 'University of Mumbai - Terna Engineering College',
+            score: 'CGPA: 8.14',
+            year: '2021 - 2025'
+        },
+        {
+            degree: '12th - HSC (Science)',
+            institution: 'Pace Junior Science College',
+            score: 'Percentage: 91.83%', // Replace with your actual percentage
+            year: '2021' // Replace with your year
+        },
+        {
+            degree: '10th - CBSE',
+            institution: 'Ryan International School, Sanpada',
+            score: 'Percentage: 91.8%', // Replace with your actual percentage
+            year: '2019' // Replace with your year
+        }
+    ];
+
     return (
         <section className="home">
             <div className="home-content">
@@ -42,11 +63,18 @@ function Home() {
                     </a>
                 </div>
 
-                <div className="education-card">
+                <div className="education-section">
                     <h3 className="education-title">Education</h3>
-                    <p className="college-name">University of Mumbai - Terna Engineering College</p>
-                    <p className="degree">B.E. in Computer Engineering</p>
-                    <p className="cgpa">CGPA: 8.14</p>
+                    {education.map((edu, index) => (
+                        <div key={index} className="education-card">
+                            <p className="degree">{edu.degree}</p>
+                            <p className="institution">{edu.institution}</p>
+                            <div className="education-details">
+                                <span className="score">{edu.score}</span>
+                                <span className="year">{edu.year}</span>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
