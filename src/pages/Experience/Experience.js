@@ -15,16 +15,16 @@ function Experience() {
                 </div>
                 <ul className="exp-list">
                     <li className="exp-item">
-                        Developed a Library Management REST API using Node.js, Express.js, and SQL (Sequelize), supporting book, user and issue/return
-                        workflows.
+                        Built and maintained a Library Management REST API using Node.js, Express.js, and SQL, implementing core workflows such
+                        as user management, book inventory, and issue/return operations.
                     </li>
                     <li className="exp-item">
-                        Implemented an actor-model based approach for handling book/file uploads, improving concurrency, reliability and separation of
-                        responsibilities.
+                        Designed the backend database schema and implemented secure, scalable CRUD APIs, ensuring data consistency and efficient
+                        query performance.
                     </li>
                     <li className="exp-item">
-                        Contributed to a Bot Studio Platform using FastAPI, Rasa Framework, and MongoDB, including JSON-to-YAML conversion for
-                        dynamic chatbot configuration.
+                        Implemented core functionalities for a visual Bot Studio platform including drag-and-drop node interface with React Flow,
+                        RESTful APIs for bot configuration using FastAPI, and dynamic JSON-to-YAML conversion.
                     </li>
                 </ul>
             </div>

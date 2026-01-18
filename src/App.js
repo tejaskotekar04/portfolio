@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Experience from './pages/Experience/Experience';
 import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
+import Certifications from './pages/Certifications/Certifications';
 import Contact from './pages/Contacts/Contacts';
 import './App.css';
 
@@ -33,6 +34,9 @@ function App() {
         </div>
         <div id="skills" className="section">
           <Skills />
+        </div>
+        <div id="certifications" className="section">
+          <Certifications />
         </div>
         <div id="contact" className="section">
           <Contact />
