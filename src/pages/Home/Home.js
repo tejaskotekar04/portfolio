@@ -30,7 +30,7 @@ function Home() {
                 <h1 className="name">Tejas Kotekar</h1>
                 <h2 className="title">Software Engineer</h2>
                 <p className="bio">
-                    Computer Engineering graduate passionate about backend development,
+                    Computer Engineering graduate passionate about artificial intelligence, backend development,
                     designing APIs, and building scalable web applications. I love turning complex problems
                     into clean, maintainable solutions.
                 </p>
