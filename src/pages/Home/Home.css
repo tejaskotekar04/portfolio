@@ -65,109 +65,90 @@
   transform: translateY(-3px);
 }
 
-.education-card {
-  background-color: #1a1a1a;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #222222;
+/* Education Section Styles */
+.education-section {
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .education-title {
   color: #4fc3f7;
-  margin-bottom: 15px;
-  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.college-name {
-  font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.degree {
-  color: #aaaaaa;
-  margin-bottom: 5px;
-}
-
-.cgpa {
-  color: #4fc3f7;
-  font-weight: 600;
-}
-
-/* Add/Update these styles in your existing Home.css */
-
-.education-section {
-    margin-top: 3rem;
-    width: 100%;
-}
-
-.education-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    font-weight: 600;
 }
 
 .education-card {
-    background: #f8f9fa;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #222222;
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
 }
 
 .education-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  border-color: #4fc3f7;
+  box-shadow: 0 4px 12px rgba(79, 195, 247, 0.1);
 }
 
 .education-card:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .degree {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
 .institution {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
 
 .education-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .score {
-    font-size: 0.9rem;
-    color: #007bff;
-    font-weight: 500;
+  font-size: 0.9rem;
+  color: #4fc3f7;
+  font-weight: 600;
 }
 
 .year {
-    font-size: 0.9rem;
-    color: #888;
+  font-size: 0.9rem;
+  color: #888888;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .education-details {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .education-card {
-        padding: 1.25rem;
-    }
+  .home {
+    padding: 30px 20px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .education-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .education-card {
+    padding: 1.25rem;
+  }
 }
