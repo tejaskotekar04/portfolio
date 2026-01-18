@@ -1,4 +1,5 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import Experience from './pages/Experience/Experience';
@@ -8,17 +9,34 @@ import Contact from './pages/Contacts/Contacts';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+    };
+  }, []);
+
   return (
     <HashRouter>
       <Navbar />
       <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div id="home" className="section">
+          <Home />
+        </div>
+        <div id="experience" className="section">
+          <Experience />
+        </div>
+        <div id="projects" className="section">
+          <Projects />
+        </div>
+        <div id="skills" className="section">
+          <Skills />
+        </div>
+        <div id="contact" className="section">
+          <Contact />
+        </div>
       </main>
     </HashRouter>
   );

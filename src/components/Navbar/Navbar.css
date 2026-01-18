@@ -42,3 +42,52 @@
 .navbar-links a.active {
   color: #4fc3f7;
 }
+
+.navbar-links a.active {
+    color: #007bff; 
+    font-weight: 600;
+    border-bottom: 2px solid #007bff; /* Optional: underline effect */
+}
+
+/* If you want a different hover effect for active links */
+.navbar-links a.active:hover {
+    color: #0056b3;
+}
+
+/* Style buttons to look like links */
+.nav-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #007bff; 
+}
+
+/* Active state for navigation buttons */
+.navbar-links .nav-button.active {
+    color: #007bff; 
+    font-weight: 600;
+    border-bottom: 2px solid #007bff; /* Optional: underline effect */
+}
+
+/* Different hover effect for active links */
+.navbar-links .nav-button.active:hover {
+    color: #0056b3;
+}
+
+/* For the logo button, you might want different styling */
+.navbar-logo .nav-button {
+    font-size: 1.2rem; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.navbar-logo .nav-button:hover {
+    color: #007bff;
+}

@@ -1,27 +1,86 @@
-import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 function Navbar() {
+    const [activeSection, setActiveSection] = useState('home');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['home', 'experience', 'projects', 'skills', 'contact'];
+            const scrollPosition = window.scrollY + 100;
+
+            for (const section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const offsetTop = element.offsetTop;
+                    const offsetHeight = element.offsetHeight;
+
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        setActiveSection(section);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <NavLink to="/">Tejas Kotekar</NavLink>
+                <button onClick={() => scrollToSection('home')} className="nav-button">
+                    Tejas Kotekar
+                </button>
             </div>
             <ul className="navbar-links">
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <button
+                        onClick={() => scrollToSection('home')}
+                        className={`nav-button ${activeSection === 'home' ? 'active' : ''}`}
+                    >
+                        Home
+                    </button>
                 </li>
                 <li>
-                    <NavLink to="/experience">Experience</NavLink>
+                    <button
+                        onClick={() => scrollToSection('experience')}
+                        className={`nav-button ${activeSection === 'experience' ? 'active' : ''}`}
+                    >
+                        Experience
+                    </button>
                 </li>
                 <li>
-                    <NavLink to="/projects">Projects</NavLink>
+                    <button
+                        onClick={() => scrollToSection('projects')}
+                        className={`nav-button ${activeSection === 'projects' ? 'active' : ''}`}
+                    >
+                        Projects
+                    </button>
                 </li>
                 <li>
-                    <NavLink to="/skills">Skills</NavLink>
+                    <button
+                        onClick={() => scrollToSection('skills')}
+                        className={`nav-button ${activeSection === 'skills' ? 'active' : ''}`}
+                    >
+                        Skills
+                    </button>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <button
+                        onClick={() => scrollToSection('contact')}
+                        className={`nav-button ${activeSection === 'contact' ? 'active' : ''}`}
+                    >
+                        Contact
+                    </button>
                 </li>
             </ul>
         </nav>
