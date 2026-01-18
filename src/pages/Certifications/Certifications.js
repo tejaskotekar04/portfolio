@@ -9,6 +9,12 @@ function Certifications() {
             certificateId: '241911Y2378', // Optional
             link: 'https://drive.google.com/file/d/1WIHRGr-AIAx_csSwgWchzhx9SFRQJndB/view?usp=sharing', // Optional
         },
+        {
+            name: 'Data Analyst Bootcamp',
+            issuer: 'Udemy',
+            date: 'May 2025',
+            link: 'https://drive.google.com/file/d/1A2zgQ-n-SfNqAZbKD8rSvPn-DG9kprJ6/view?usp=sharing', // Optional
+        }
         // Add more certifications here
     ];
 
