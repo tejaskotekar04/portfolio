@@ -12,7 +12,7 @@ function Skills() {
         },
         {
             category: 'Databases',
-            skills: ['MySQL'],
+            skills: ['MySQL', 'MongoDB'],
         },
         {
             category: 'AI & ML',
