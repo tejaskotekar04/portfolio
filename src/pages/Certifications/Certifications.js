@@ -1,7 +1,8 @@
+import { useState, useEffect } from 'react';
 import './Certifications.css';
 
 function Certifications() {
-    const certifications = [
+    const [certifications] = useState([
         {
             name: 'Hands-on approach to AI for real-world applications',
             issuer: 'TCS iON | IIT Kharagpur',
@@ -14,9 +15,14 @@ function Certifications() {
             issuer: 'Udemy',
             date: 'May 2025',
             link: 'https://drive.google.com/file/d/1A2zgQ-n-SfNqAZbKD8rSvPn-DG9kprJ6/view?usp=sharing', // Optional
-        }
+        },
         // Add more certifications here
-    ];
+    ]);
+
+    useEffect(() => {
+        // Force re-render on mount
+        window.dispatchEvent(new Event('resize'));
+    }, []);
 
     return (
         <section className="certifications">
@@ -24,12 +30,12 @@ function Certifications() {
 
             <div className="certifications-grid">
                 {certifications.map((cert, index) => (
-                    <div key={index} className="certification-card">
+                    <div key={`cert-${index}`} className="certification-card">
                         <h3 className="cert-name">{cert.name}</h3>
                         <p className="cert-issuer">{cert.issuer}</p>
                         <p className="cert-date">{cert.date}</p>
                         {cert.credentialId && (
-                            <p className="cert-id">Certificate ID: {cert.credentialId}</p>
+                            <p className="cert-id">Credential ID: {cert.credentialId}</p>
                         )}
                         {cert.link && (
                             <a
