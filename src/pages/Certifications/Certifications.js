@@ -7,7 +7,6 @@ function Certifications() {
             name: 'Hands-on approach to AI for real-world applications',
             issuer: 'TCS iON | IIT Kharagpur',
             date: 'October 2024',
-            certificateId: '241911Y2378', // Optional
             link: 'https://drive.google.com/file/d/1WIHRGr-AIAx_csSwgWchzhx9SFRQJndB/view?usp=sharing', // Optional
         },
         {
