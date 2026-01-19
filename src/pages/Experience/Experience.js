@@ -9,7 +9,7 @@ function Experience() {
                 <div className="exp-header">
                     <div>
                         <h3 className="company-name">TraceArt Technologies (OPC) Pvt. Ltd.</h3>
-                        <p className="role">Intern</p>
+                        <p className="role">Software Developer Intern</p>
                     </div>
                     <span className="duration">July 2025 - December 2025</span>
                 </div>
