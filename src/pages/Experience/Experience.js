@@ -15,16 +15,16 @@ function Experience() {
                 </div>
                 <ul className="exp-list">
                     <li className="exp-item">
-                        Built and maintained a Library Management REST API using Node.js, Express.js, and SQL, implementing core workflows such
-                        as user management, book inventory, and issue/return operations.
+                        Engineered a no-code Bot Studio platform using React Flow and FastAPI, accelerating Rasa-based bot development by 80%
+                        through visual workflow creation and instant YAML file generation.
                     </li>
                     <li className="exp-item">
-                        Designed the backend database schema and implemented secure, scalable CRUD APIs, ensuring data consistency and efficient
-                        query performance.
+                        Architected automated JSON-to-YAML conversion system with dual databases (MongoDB for bot configs, MySQL for user
+                        data), dynamically generating 4 Rasa framework files in real-time upon workflow saves.
                     </li>
                     <li className="exp-item">
-                        Implemented core functionalities for a visual Bot Studio platform including drag-and-drop node interface with React Flow,
-                        RESTful APIs for bot configuration using FastAPI, and dynamic JSON-to-YAML conversion.
+                        Designed scalable canvas-based interface supporting unlimited nodes per workflow with drag-and-drop functionality and
+                        properties panel, enabling users to build complex conversational agents.
                     </li>
                 </ul>
             </div>
