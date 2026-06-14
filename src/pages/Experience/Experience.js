@@ -15,16 +15,19 @@ function Experience() {
                 </div>
                 <ul className="exp-list">
                     <li className="exp-item">
-                        Engineered a no-code Bot Studio platform using React Flow and FastAPI, accelerating Rasa-based bot development by 80%
-                        through visual workflow creation and instant YAML file generation.
+                        Worked on developing an AI-powered chatbot/agent using the Rasa framework.
                     </li>
                     <li className="exp-item">
-                        Architected automated JSON-to-YAML conversion system with dual databases (MongoDB for bot configs, MySQL for user
-                        data), dynamically generating 4 Rasa framework files in real-time upon workflow saves.
+                        Implemented conversational flows, intents, and responses to enhance user interaction.
                     </li>
                     <li className="exp-item">
-                        Designed scalable canvas-based interface supporting unlimited nodes per workflow with drag-and-drop functionality and
-                        properties panel, enabling users to build complex conversational agents.
+                        Participated in troubleshooting, debugging, and improving application functionality.
+                    </li>
+                    <li className="exp-item">
+                        Collaborated with team members to design, develop and test backend modules.
+                    </li>
+                    <li className="exp-item">
+                        Gained experience in software development lifecycle (SDLC), API integration, and backend development.
                     </li>
                 </ul>
             </div>
